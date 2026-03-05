@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Design Interface</title>
+    <style>
+        /* Fundo do Site */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        /* Cartão com Efeito Glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            width: 320px;
+            color: white;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .content span {
+            font-size: 4rem;
+            font-weight: 900;
+            opacity: 0.1;
+            display: block;
+            line-height: 1;
+        }
+
+        .content h3 {
+            margin: 10px 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            font-weight: 300;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Estilização do Botão Interativo */
+        .btn-cyber {
+            text-decoration: none;
+            color: #00f2ff;
+            border: 2px solid #00f2ff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.4s ease;
+            display: inline-block;
+        }
+
+        /* Efeito de Hover */
+        .btn-cyber:hover {
+            background: #00f2ff;
+            color: #000;
+            box-shadow: 0 0 20px #00f2ff;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <div class="content">
+            <span>01</span>
+            <h3>Cyber Design</h3>
+            <p>A interface do futuro utiliza profundidade e transparência para criar imersão total.</p>
+            
+            <a href="https://uxmd.com.br/profundidade-um-principio-fundamental-no-ux-motion-design/" target="_blank" class="btn-cyber">Saiba Mais</a>
+        </div>
+    </div>
+
+</body>
+</html>

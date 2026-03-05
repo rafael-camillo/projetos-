@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login Estruturada</title>
+</head>
+<body>
+
+    <main>
+        <section>
+            <h1>Seja bem vindo</h1>
+               <h1>Acessar Conta</h1>
+            <p>Por favor, insira suas credenciais abaixo.</p>
+
+            <form action="/login" method="POST">
+                
+                <div>
+                    <label for="email">Endereço de E-mail:</label><br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="exemplo@dominio.com" 
+                        required 
+                        autocomplete="email"
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="password">Senha:</label><br>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Digite sua senha" 
+                        required 
+                        minlength="8"
+                        autocomplete="current-password"
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Lembrar de mim neste dispositivo</label>
+                </div>
+
+                <br>
+
+                <button type="submit">Entrar no Sistema</button>
+            </form>
+
+            <hr> <nav>
+                <ul>
+                    <li><a href="/esqueci-senha">Esqueci minha senha</a></li>
+                    <li>Ainda não tem conta? <a href="/cadastro">Cadastre-se aqui</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nome da Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
